@@ -19,6 +19,12 @@ def classifier_subject():
     result = routes_bp.model_instance.subject_analysis(prompt)
     return jsonify(result)
 
+@routes_bp.route('/generate')
+def generate():
+    prompt = request.args.get('prompt')
+    result = routes_bp.model_instance.generate(prompt)
+    return jsonify(result)
+
 def register_routes(app, model_instance):
     routes_bp.model_instance = model_instance
     app.register_blueprint(routes_bp)
