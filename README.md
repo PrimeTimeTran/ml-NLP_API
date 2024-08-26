@@ -1,3 +1,6 @@
+## Innoboost
+
+
 ## Dependencies
 
 - [Transformers](https://pypi.org/project/transformers/)
@@ -21,3 +24,9 @@
 
 - Target route with prompt key as query string and prompt as value. To complete a sentence:
   http://127.0.0.1:5000/generate?prompt=Roses+are+red
+
+## Technology stacks
+
+Langflow
+Haystack, Gradio
+Vercel AI SDK

@@ -17,3 +17,16 @@ class Model():
     
     def generate(self, prompt):
       return self.generator(prompt)
+
+# Does anyone know where I can find a list of the best kung fu schools in HCMC? 
+
+# Would love to be able to move to SG and continue my training... that'd be dope.
+
+# TIA~!
+# https://www.facebook.com/reel/1456874645176248
+
+
+
+# Langflow
+# Haystack, Gradio
+# Vercel AI SDK
