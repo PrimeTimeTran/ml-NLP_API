@@ -1,6 +1,5 @@
 ## Innoboost
 
-
 ## Dependencies
 
 - [Transformers](https://pypi.org/project/transformers/)
@@ -27,6 +26,49 @@
 
 ## Technology stacks
 
-Langflow
-Haystack, Gradio
-Vercel AI SDK
+Langflow, Haystack, Gradio, Vercel AI SDK
+
+1. Create a new prompt chat
+   POST https://api.1long.ai/chats/new
+   2. Show history of chats
+   GET https://api.1long.ai/chats
+   [
+    {
+      id: null,
+      prompt: 'what is RAG'
+    },
+   ]
+
+2. Show history of chats
+   GET https://api.1long.ai/chats
+   [
+    {
+      id: 123abc,
+      title: 'what is RAG'
+    },
+    {
+      id: 123abcdef,
+      title: 'what is AL/ML'
+    },
+   ]
+
+3. Get detailed & most recent messages for the chat.
+   GET https://api.1long.ai/chats/[id]
+
+   [
+    {
+      id: 123abc,
+      user: 'Loi',
+      body: 'what is RAG'
+    },
+    {
+      id: 123abcdef,
+      user: 'AI',
+      body: 'Rag is a too lblah blah blah'
+    }
+   ]
+
+```sh
+# Example
+GET https://api.1long.ai/chats/1231929812828abassuyv121
+```
