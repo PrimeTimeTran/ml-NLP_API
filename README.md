@@ -7,7 +7,6 @@ The use of these tools allows us to do things like evaluate the sentiment of a p
 ## Dependencies
 
 - [Transformers](https://pypi.org/project/transformers/)
-- [HTML Encoder](https://www.freeformatter.com/url-encoder.html#before-output)
 
 ## Setup
 
@@ -17,9 +16,9 @@ The use of these tools allows us to do things like evaluate the sentiment of a p
 - Start project
   `flask run`
 
-- Encode prompt you want to test into HTML Encoded query string with [this tool](https://www.freeformatter.com/url-encoder.html#before-output)
-
 ## Demo
+
+Each prompt should be [HTML Encoded](https://www.freeformatter.com/url-encoder.html#before-output) in the URL Query String
 
 ### 1. Classify Sentiment of a prompt
 
